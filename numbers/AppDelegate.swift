@@ -8,14 +8,24 @@
 
 import UIKit
 
+var currentNumber:String = "000000000"//保存当前浏览空间
+let userDefaults = NSUserDefaults.standardUserDefaults()
+var needRefresh=Int(0)
+var todayLike=Int(0)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    
+    
+    
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
+        AVOSCloud.setApplicationId("0lfcuhry2ifpsjcdkvv85fupnvc997109hbgxvumnzgwnfgj",clientKey:"awlswtx4kxt5bt4mz8yumqomxtxggni75x21xb7szejzrzw6")
         return true
     }
 
